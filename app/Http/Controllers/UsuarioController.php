@@ -11,7 +11,7 @@ class UsuarioController extends Controller
         $data = $request->all();
         $nombre = $data["nombre"];
         $apellido = $data["apellido"];
-        $dni = $data["apellido"];
+        $dni = $data["dni"];
 
         $usuario = new Usuario($nombre,$apellido,$dni);
 
