@@ -12,7 +12,7 @@ class UsuarioController extends Controller
         $nombre = $data["nombre"];
         $apellido = $data["apellido"];
         $dni = $data["apellido"];
- 
+
         $usuario = new Usuario($nombre,$apellido,$dni);
 
         $nombreCompleto = $usuario->obtenerNombreCompleto();
@@ -20,8 +20,16 @@ class UsuarioController extends Controller
         return response()->json([
             "status" => "Success",
             "nombreCompleto" => $nombreCompleto,
-            "code" => 200
-            
+            "code" => 200,
         ],200);
+    }
+
+    public function obtenerUsuario(){
+        Echo "hola";
+    }
+
+    
+    public function p(){
+        Echo "hola";
     }
 }

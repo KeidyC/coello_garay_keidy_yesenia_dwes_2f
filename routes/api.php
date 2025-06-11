@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/nombreCompleto',[UsuarioController::class, 'procesarNombre']);
+Route::get('/p',[UsuarioController::class, 'p']);

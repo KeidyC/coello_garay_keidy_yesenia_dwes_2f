@@ -15,11 +15,12 @@ class Usuario extends Model
     public function __construct($nombre,$apellido,$dni){
         $this->nombre=$nombre;
         $this->apellido=$apellido;
-        $this->dni= $dni;
+        $this->dni=$dni;
     }
     
     public function obtenerNombreCompleto(){
-        return "Me llamo " . $this->nombre . ' ' . $this->apellido . ' y mi dni es ' . $this->dni;
+        $resultado = 'Me llamo ' . $this->nombre . ' ' . $this->apellido . ' y mi dni es ' . $this->dni;
+        return $resultado;
     }
 }
 
